@@ -14,16 +14,13 @@ export default function Page() {
           work.
         </p>
 
-        <div className="flex items-center justify-between gap-8 p-6">
-          <div className="max-w-md">
-            <p className="text-sm text-gray-400">
-              I have experience working on various web development projects,
-              including building responsive websites and web applications using
-              modern technologies.
-            </p>
-          </div>
-
-          <div>
+        <div className="flex flex-col items-center justify-between gap-8 p-6 md:flex-row">
+          <p className="text-sm text-gray-400 md:w-1/2">
+            I have experience working on various web development projects,
+            including building responsive websites and web applications using
+            modern technologies.
+          </p>
+          <div className="flex justify-center md:w-1/2">
             <IconCloudDemo />
           </div>
         </div>
