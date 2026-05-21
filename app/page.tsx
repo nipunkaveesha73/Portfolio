@@ -1,19 +1,35 @@
 import { Button } from "@/components/ui/button"
+import { DockDemo } from "@/components/dock"
+import { LightRays } from "@/components/ui/light-rays"
+import { HyperText } from "@/components/ui/hyper-text"
+import { IconCloudDemo } from "@/components/icon-cloud-demo"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
+    <div className="relative h-screen w-full overflow-hidden rounded-xl border">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <HyperText className="text-6xl">Hi, I'm Nipun Kaveesha. </HyperText>
+        <p className="text-sm text-gray-400">
+          Love building websites, exploring technology, and learning how systems
+          work.
+        </p>
+
+        <div className="flex items-center justify-between gap-8 p-6">
+          <div className="max-w-md">
+            <p className="text-sm text-gray-400">
+              I have experience working on various web development projects,
+              including building responsive websites and web applications using
+              modern technologies.
+            </p>
+          </div>
+
+          <div>
+            <IconCloudDemo />
+          </div>
         </div>
       </div>
+      <DockDemo />
+      <LightRays />
     </div>
   )
 }
